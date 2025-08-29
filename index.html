@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tool untuk Si Poke Poke</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <div id="setupScreen">
+            <div style="text-align:center;margin-bottom:18px;">
+                <h1>KISS(Kita Immo Season Selanjutnya)-tools</h1>
+                <p>Pilih hero dan battle spell untuk tiap role</p>
+            </div>
+            <div class="setup-grid" id="heroSetupGrid"></div>
+            <div style="text-align:center;margin-top:12px;">
+                <button id="startTrackerBtn" class="btn primary">START TRACKER</button>
+            </div>
+        </div>
+
+        <div id="trackerScreen" style="display:none;">
+            <h1 style="text-align:center;">MLBB Spell Cooldown Tracker</h1>
+            <div class="tracker-header">
+                <div class="card" style="flex-grow: 2;">
+                    <h3>Penggunaan</h3>
+                    <p> 1. Mulai game clock terlebih dahulu <br>
+                        2. Kalo musuh buang spell, tekan iconnya <br> 
+                        3. Ga usah banyak yapping, immo dulu aja poke poke
+                    </p>
+                </div>
+                <div class="game-clock-card">
+                    <div>Game Clock</div>
+                    <div id="gameClock" class="game-clock-display">00:00</div>
+                    <div class="game-clock-controls">
+                        <div class="time-inputs">
+                            <input type="number" id="minInput" placeholder="MM" min="0" max="59" value="0">
+                            <span>:</span>
+                            <input type="number" id="secInput" placeholder="SS" min="0" max="59" value="0">
+                            <button id="setTimeBtn" class="btn mini">Set Time</button>
+                        </div>
+                        <div class="btn-group">
+                            <button id="clockStart" class="btn">Start</button>
+                            <button id="clockStop" class="btn">Stop</button>
+                            <button id="clockReset" class="btn">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid" id="heroGrid"></div>
+
+            <div style="margin-top:12px;display:flex;gap:8px;align-items:center;justify-content:center;">
+                <button id="resetAll" class="btn">Reset All Spells</button>
+            </div>
+
+            <div class="small-note" style="margin-top:10px;">Cara penggunaan: klik spell untuk mulai cooldown. Klik
+                kanan pada spell untuk ubah. | Dibuat oleh <a href="http://denatajp.github.io">JP</a></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
