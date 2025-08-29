@@ -268,10 +268,10 @@ function renderSetupScreen() {
         heroCard.className = 'hero-setup-card';
 
         // default image (placeholder)
-        const imgSrc = "/img/" + img_lane[i] + ".jpg";
+        const imgSrc = "https://raw.githubusercontent.com/denatajp/kiss-mlbb/refs/heads/main/img/" + img_lane[i] + ".jpg";
 
         heroCard.innerHTML = `
-            <h4><img style="width: 30px" src="/img/${img_lane[i]}.jpg">${lane[i]}</h4>
+            <h4><img style="width: 30px" src="https://raw.githubusercontent.com/denatajp/kiss-mlbb/refs/heads/main/img/${img_lane[i]}.jpg">${lane[i]}</h4>
             <div class="hero-avatar"><img src="${imgSrc}" alt="avatar"></div>
             <div class="hero-name">Pilih Hero</div>
 
@@ -695,3 +695,4 @@ document.addEventListener('DOMContentLoaded', () => {
     loadHeroListThenRender();
     updateClockStatusUI(); // Inisialisasi tampilan status clock
 });
+
