@@ -24,5 +24,5 @@ sebuah tracker cooldown spell untuk Mobile Legends (MLBB). Aplikasi web statis u
 
 ## Demo
 
-https://denatajp.github.io/kiss
+https://denatajp.github.io/kiss-mlbb
 
